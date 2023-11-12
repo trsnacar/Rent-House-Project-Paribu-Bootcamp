@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rental Management System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Rental Management System</h1>
+    </header>
+
+    <section id="add-property">
+        <h2>Add New Property</h2>
+        <form id="newPropertyForm">
+            <input type="text" id="location" placeholder="Property Location" required>
+            <input type="number" id="rent" placeholder="Rent (ETH)" required>
+            <button type="button" onclick="addProperty()">Add Property</button>
+        </form>
+    </section>
+
+    <section id="properties-list">
+        <h2>Available Properties</h2>
+        <ul id="properties">
+            <!-- Properties will be listed here -->
+        </ul>
+    </section>
+
+    <!-- Web3.js Kütüphanesi -->
+    <script src="web3.min.js"></script>
+    <!-- Uygulama JavaScript Dosyası -->
+    <script src="app.js"></script>
+</body>
+</html>
